@@ -1,14 +1,14 @@
-Step to run application:
-Step 1:	Create the copy of the project.
-Step 2: Open command prompt and change your current path 
-to folder where you can find 'app.py' file.
-Step 3: Create environment by command given below-
-conda create -name <environment name>
-Step 4: Activate environment by command as follows-
-conda activate <environment name>
-Step 5: Use command below to install required dependencies-
-python -m pip install -r requirements.txt
-Step 6: Run application by command;
-python app.py
-You will get url copy it and paste in browser.
-Step 7: You have sample_data folder where you can get images to test.
+# PAN Card Tampering Detector
+
+This project is a web-based application for detecting tampering or forgery on PAN cards using OpenCV and Flask. It compares the input PAN card image against the original format to check for discrepancies. Flask is used as the backend to serve the web application, where users can upload PAN card images. OpenCV handles the image processing, detecting anomalies like alterations in text, layout, or security features.
+
+### Key Features:
+- **Image Upload**: Users can upload PAN card images via the web interface.
+- **Forgery Detection**: The application uses OpenCV to analyze the image for any tampering (e.g., inconsistent fonts, altered text, mismatched dimensions).
+- **Results Display**: After analysis, the result is displayed on the web page, indicating whether tampering is detected.
+
+### Technologies Used:
+- **Flask**: For building the web interface and handling user requests.
+- **OpenCV**: For image processing and tampering detection.
+- **Python**: As the core language for logic and integrations.
+
